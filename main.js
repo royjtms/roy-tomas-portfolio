@@ -63,7 +63,7 @@ sections.forEach(section => spyObserver.observe(section));
 /* ============================================================
   TYPEWRITER
    ============================================================ */
-const words = ['DEVELOPER', 'DESIGNER', 'CREATOR'];
+const words = ['DEVELOPER', 'WEB DESIGNER', 'CREATOR'];
 let wordIndex = 0, charIndex = 0, isDeleting = false;
 const el = document.getElementById('typewriter');
 
