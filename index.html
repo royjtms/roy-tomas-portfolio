@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & OG tags -->
+  <meta name="description" content="Roy Tomas — Frontend Developer. Building responsive, user-centric interfaces with modern, maintainable code.">
+  <meta name="author" content="Roy Tomas">
+  <meta property="og:title" content="Roy Tomas | Frontend Developer">
+  <meta property="og:description" content="Building responsive, user-centric interfaces with modern, maintainable code.">
+  <meta property="og:image" content="images/og-preview.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roy Tomas | Frontend Developer">
+  <meta name="twitter:description" content="Building responsive, user-centric interfaces with modern, maintainable code.">
+
+  <title>Roy Tomas | Frontend Developer</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fallback .ico for older browsers -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="hero-nav container">
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li>
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Close Button  -->
+        <div class="nav-close" id="nav-close">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+
+      <!-- Toggle Menu -->
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero section" id="home">
+      <div class="hero-content container">
+        <p class="hero-greeting">Hello,</p>
+        <h1 class="hero-name">I'm Roy Tomas</h1>
+        <h2 class="hero-role"><span id="typewriter"></span><span class="cursor">|</span></h2>
+        <p class="hero-description">I design and develop scalable, user-centric front-end interfaces using modern, maintainable code</p>
+        <div class="hero-buttons">
+          <a href="https://drive.google.com/file/d/1qSDb1E7iTDEG_M71u16UFs8xQS0Zulqm/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-rocket"></i> View CV
+          </a>
+          <a href="#about" class="btn btn-learn">
+            <i class="fa-solid fa-arrow-down"></i> Learn More
+          </a>
+        </div>
+      </div>
+      <!-- decorative orb -->
+      <div class="hero-orb" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about section" id="about">
+      <div class="about-wrapper container">
+
+        <div class="about-header reveal">
+          <h2 class="about-title">About Me</h2>
+          <p class="about-subtitle">Get to know me</p>
+        </div>
+
+        <div class="about-content">
+
+          <!-- TOP ROW: Photo + Bio -->
+          <div class="about-row-top">
+
+            <div class="about-card about-card--photo reveal--left">
+              <div class="about-photo-box">
+                <img src="images/aboutpic.png" alt="Roy Tomas" class="about-photo-img" loading="lazy" />
+              </div>
+              <h3 class="about-photo-name">Roy Tomas</h3>
+              <p class="about-photo-role">Frontend Developer</p>
+            </div>
+
+            <div class="about-card about-card--bio reveal--right">
+              <p class="about-card-label">About Me</p>
+              <p class="about-bio-text">
+                I'm Roy, a front-end developer with a strong technical foundation and experience delivering responsive, high-quality websites. I combine clean, efficient code with solid UI/UX principles to build fast, intuitive, and accessible digital experiences. I'm ready to contribute real value to your team.
+              </p>
+              <p class="about-bio-text">
+                When I'm not coding, you'll find me exploring new technologies, working on personal projects, or leveling up my skills to stay ahead of the curve.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- MIDDLE ROW: Skills marquee -->
+          <div class="about-card about-card--skills reveal">
+            <p class="about-card-label">Skills & Tools</p>
+
+            <div class="skills-marquee">
+              <div class="skills-marquee-track">
+                <span class="skill-item"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-item"><i class="fa-brands fa-react"></i> React</span>
+                <span class="skill-item"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="skill-item"><i class="fa-brands fa-figma"></i> Figma</span>
+                <span class="skill-item"><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span class="skill-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                <span class="skill-item"><i class="fa-brands fa-webflow"></i> Webflow</span>
+                <span class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX</span>
+                <!-- duplicates for seamless loop -->
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-react"></i> React</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-figma"></i> Figma</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-webflow"></i> Webflow</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX</span>
+              </div>
+            </div>
+
+            <div class="skills-marquee skills-marquee--reverse">
+              <div class="skills-marquee-track">
+                <span class="skill-item"><i class="fa-brands fa-webflow"></i> Webflow</span>
+                <span class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX</span>
+                <span class="skill-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                <span class="skill-item"><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span class="skill-item"><i class="fa-brands fa-figma"></i> Figma</span>
+                <span class="skill-item"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="skill-item"><i class="fa-brands fa-react"></i> React</span>
+                <span class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="skill-item"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-webflow"></i> Webflow</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-figma"></i> Figma</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-react"></i> React</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="skill-item" aria-hidden="true"><i class="fa-brands fa-html5"></i> HTML5</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM ROW: Experience -->
+          <div class="about-card about-card--experience reveal">
+            <p class="about-card-label">Experience</p>
+            <div class="about-exp-list">
+
+              <div class="about-exp-item">
+                <div class="about-exp-header">
+                  <div class="about-exp-meta">
+                    <div class="about-exp-icon-box">
+                      <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div>
+                      <p class="about-exp-role">Web Development Intern</p>
+                      <p class="about-exp-company">City Government of Biñan</p>
+                    </div>
+                  </div>
+                  <span class="about-exp-year">Mar 2023 — Aug 2023</span>
+                </div>
+                <p class="about-bio-text">My role focused on webpage design, UI structure, navigation, and content presentation, while also giving me exposure to CodeIgniter, PHP, MariaDB, and related development tools. The experience strengthened my skills in UI/UX, collaboration, troubleshooting, and translating project requirements into functional web pages for real users.</p>
+              </div>
+
+              <div class="about-exp-divider"></div>
+
+              <div class="about-exp-item">
+                <div class="about-exp-header">
+                  <div class="about-exp-meta">
+                    <div class="about-exp-icon-box">
+                      <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div>
+                      <p class="about-exp-role">Marketing Assistant</p>
+                      <p class="about-exp-company">Self-employed</p>
+                    </div>
+                  </div>
+                  <span class="about-exp-year">Feb 2024 — Jan 2025</span>
+                </div>
+                <p class="about-bio-text">I developed and executed content strategies aligned with the brand's positioning while contributing across content planning, copywriting, visual direction, and campaign execution. I also combined analytical thinking with creative problem-solving to help strengthen brand visibility, engagement, and overall marketing impact.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects section" id="projects">
+      <div class="projects-wrapper container">
+
+        <div class="projects-header reveal">
+          <h2 class="projects-title">Featured Projects</h2>
+          <p class="projects-subtitle">Selected projects focused on building intuitive, user-friendly interfaces and practical solutions</p>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- Project 01 -->
+          <div class="project-item reveal">
+            <div class="project-item-left">
+              <span class="project-item-num">01</span>
+              <div class="project-item-body">
+                <div class="project-item-top">
+                  <h3 class="project-name">Travelers</h3>
+                  <div class="project-techs">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A fully responsive travel landing page promoting Philippine tourism. Features a full-screen hero with staggered entrance animations, a Swiper.js destination carousel, packages grid, and testimonials.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://travelers-website.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/royjtms/philippines-travel-website" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fa-brands fa-github"></i> Source
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item-image">
+              <img src="images/travelers-website.png" alt="Travelers Project" class="project-image" loading="lazy" />
+              <div class="project-image-overlay"></div>
+            </div>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <!-- Project 02 -->
+          <div class="project-item reveal--right">
+            <div class="project-item-left">
+              <span class="project-item-num">02</span>
+              <div class="project-item-body">
+                <div class="project-item-top">
+                  <h3 class="project-name">Café au lait</h3>
+                  <div class="project-techs">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A responsive coffee shop landing page showcasing the brand's menu, gallery, testimonials, and contact details with a polished UI and smooth interactions.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://cafeaulait-web.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/royjtms/Cafe-au-lait-webpage" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fa-brands fa-github"></i> Source
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item-image">
+              <img src="images/cafe website.png" alt="Café au lait Website" class="project-image" loading="lazy" />
+              <div class="project-image-overlay"></div>
+            </div>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <!-- Project 03 -->
+          <div class="project-item reveal">
+            <div class="project-item-left">
+              <span class="project-item-num">03</span>
+              <div class="project-item-body">
+                <div class="project-item-top">
+                  <h3 class="project-name">To-do List</h3>
+                  <div class="project-techs">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A to-do app with add, edit, delete, and check-off tasks. Includes a live progress bar, completion counter, localStorage persistence, and confetti on completion.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://listing-app-todo.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/royjtms/todo-list" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fa-brands fa-github"></i> Source
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item-image">
+              <img src="images/todo-list.png" alt="To-do List Project" class="project-image" loading="lazy" />
+              <div class="project-image-overlay"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="projects-footer reveal">
+          <a href="https://github.com/royjtms" target="_blank" rel="noopener noreferrer" class="btn btn-see-more">
+            See more on GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact section" id="contact">
+      <div class="contact-wrapper container">
+
+        <div class="contact-header reveal">
+          <h2 class="contact-title">Let's Connect</h2>
+          <p class="contact-subtitle">Interested in working together? Let's connect and discuss how I can contribute to your next project</p>
+        </div>
+
+        <div class="contact-content">
+
+          <!-- LEFT: Info card -->
+          <div class="contact-info-card reveal--left">
+
+            <div class="contact-info-top">
+              <p class="contact-info-label">Get in touch</p>
+              <h3 class="contact-info-title">Let's Work Together</h3>
+              <p class="contact-info-desc">I'm always open to new opportunities and collaborations. If you have a project in mind or would like to connect, I'd be glad to hear from you.</p>
+            </div>
+
+            <div class="contact-info-middle">
+              <div class="contact-availability">
+                <div class="availability-dot"></div>
+                <div class="availability-text">
+                  <span class="availability-status">Available for Work</span>
+                  <span class="availability-sub">Open to full-time &amp; freelance roles</span>
+                </div>
+              </div>
+
+              <a href="mailto:royjtms@gmail.com" class="contact-item">
+                <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-item-text">
+                  <p class="contact-label">Email Me</p>
+                  <p class="contact-value">royjtms@gmail.com</p>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square contact-item-arrow"></i>
+              </a>
+            </div>
+
+            <div class="contact-socials-wrap">
+              <p class="contact-socials-label">Find me on</p>
+              <div class="contact-socials">
+                <a href="https://github.com/royjtms" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/royjtomas/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.facebook.com/roy.tomas" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Form card -->
+          <div class="contact-form-card reveal--right">
+            <p class="contact-info-label">Contact Me</p>
+            <h3 class="form-title">Send Me a Message</h3>
+            <p class="form-subtitle">Fill out the form below and I'll get back to you as soon as possible.</p>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label"><i class="fa-solid fa-user"></i> Full Name</label>
+                  <input type="text" name="user_name" class="form-input" placeholder="Full Name" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                  <input type="email" name="user_email" class="form-input" placeholder="Email Address" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-tag"></i> Subject</label>
+                <input type="text" name="subject" class="form-input" placeholder="Subject" required />
+              </div>
+
+              <!-- Character counter added below textarea -->
+              <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-message"></i> Message</label>
+                <textarea name="message" class="form-input form-textarea" placeholder="Tell me about your project..." required maxlength="1000"></textarea>
+                <span class="char-counter" id="char-counter">0 / 1000</span>
+              </div>
+
+              <button type="submit" class="btn-send" id="send-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+
+              <p class="form-status" id="form-status"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-text">© 2026 <span>Roy Tomas</span>. Designed &amp; built with care.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home"     class="footer-link">Home</a>
+        <a href="#about"    class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact"  class="footer-link">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/royjtms"             class="footer-social" aria-label="GitHub"   target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/royjtomas/" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/roy.tomas"     class="footer-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
